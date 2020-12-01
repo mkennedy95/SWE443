@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 
 public class LoginRecord {
     //research needs to be done to get date and time
+    //adds a login user date time and if successfull not functional
     public static boolean AddLogin(String usrName, boolean success) throws Exception {
         //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         //LocalDateTime now = LocalDateTime.now();
