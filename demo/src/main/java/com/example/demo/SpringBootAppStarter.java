@@ -12,7 +12,7 @@ import javax.servlet.ServletContextListener;
 import java.util.Arrays;
 
 
-
+//starts program
 @SpringBootApplication
 @ServletComponentScan
 public class SpringBootAppStarter {
