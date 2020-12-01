@@ -16,7 +16,7 @@ public class LoginRecord {
         //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         //LocalDateTime now = LocalDateTime.now();
         //insert into database if login attempt was succesfull
-        String s = String.valueOf(success);
+       /* String s = String.valueOf(success);
         java.util.Date today = new java.util.Date();
         Connection conn = connect.databaseConn();
         String sqlQuery = ("INSERT INTO LoginRecord (usrName, success, loginTime) VALUES (?,?,?)");
@@ -26,7 +26,7 @@ public class LoginRecord {
         pstmt3.setString(2,s);
         pstmt3.setTimestamp(3,new Timestamp(System.currentTimeMillis()));
         System.out.println(sqlQuery);
-        pstmt3.executeQuery();
+        pstmt3.executeQuery();*/
 
         return true;
 
