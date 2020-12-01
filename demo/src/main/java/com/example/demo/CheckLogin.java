@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class CheckLogin {
 
-
+    //Checks to see if an account exists in the database
     public static boolean accountExists(String usrName) throws Exception {
       //  System.out.println("HELLO");
         Connection conn = connect.databaseConn();
@@ -28,6 +28,9 @@ public class CheckLogin {
         }
     }
 //usrName.compareTo(rset.getString(1)) ==
+    
+    
+    //checks to see if a password matches a username
     public static boolean passwordMatches(String usrName, String pW) throws Exception {
         //works
         //System.out.println("password matches");
@@ -45,6 +48,9 @@ public class CheckLogin {
         }
     }
 //usrName.compareTo(rset.getString("username")) == 0) && pW.compareTo(rset.getString("pass"
+    
+    
+    //adds an account into the database
     public static boolean addAccount(String usrName, String pW) throws Exception {
         //works
         //get a new id by adding 1 to current highest id value
@@ -77,6 +83,9 @@ public class CheckLogin {
         }
     }
 //(usrName.compareTo(rset3.getString(1)) == 0) && pW.compareTo(rset3.getString(2)) == 0
+    
+    
+    //checks if a friend name matches their id number
     public static boolean IDMatches(String usrName, int iD) throws Exception {
 
         Connection conn = connect.databaseConn();
@@ -93,6 +102,8 @@ public class CheckLogin {
 
     }
 //(usrName.compareTo(rset.getString(1)) == 0) && (rset.getInt(2) == iD)
+    
+    //
     public static ArrayList getFriendsList(String usrName) throws Exception {
 
 
@@ -107,7 +118,7 @@ public class CheckLogin {
         }
         return friendList;
     }
-    //create insert friend hear
+    //inster friend into the database
     public static boolean addFriend(String usrName, String friend, int id) throws Exception {
 
 
