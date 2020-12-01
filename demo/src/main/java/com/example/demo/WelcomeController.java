@@ -30,7 +30,8 @@ public class WelcomeController extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        //checks to see if a friend and id match in order to add a friend to a friend base then sends to either failed to add view or back to their welcome page
+        //depending on if the friend was added successfully
         if(matches == true){
             try {
                CheckLogin.addFriend(user, friend, id);
