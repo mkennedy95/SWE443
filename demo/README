@@ -1,3 +1,5 @@
 In order to run code run the main method located in SpringBootAppStart
 
+Most of the code is located in SWE443/demo/src/main/java/com/example/demo/
+
 Then Proceed to http://localhost:8080
