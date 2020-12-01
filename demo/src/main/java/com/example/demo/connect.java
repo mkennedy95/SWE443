@@ -16,7 +16,7 @@ public class connect {
     static final String USER = "mkenne";
     static final String PASS = "agladogu";
     static Connection conn = null;
-
+    //creates data base connection to sqlplus account provided by school need to be on mason network in order to connect properly
     public static Connection databaseConn() throws Exception {
         // TODO Auto-generated method stub
 
