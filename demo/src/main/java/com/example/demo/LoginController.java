@@ -22,6 +22,13 @@ public class LoginController extends HttpServlet {
         //call all functions with info pulled
         boolean accepted = true;
 
+        
+        //does nested if statment
+        //first check checks to see if a user exists in the database
+        //if the user exists then it checks to see if their password matches
+        //if the password matches then it moves them to the welomcome view
+        //if the password doesnt match it takes them to the failed view
+        //if the user does not exist in the data base it makes a new user
         try {
             accepted = CheckLogin.accountExists(user);
             boolean passed = true;
@@ -46,6 +53,5 @@ public class LoginController extends HttpServlet {
 
         //send results to view
 
-        //view needs to be able to go to thomas or tyler
     }
 }
